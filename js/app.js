@@ -422,11 +422,11 @@ let appContact=function(platform){
   if(platform == "linkedin")
 		a.href = "https://www.linkedin.com/in/hassankassi";
   else if(platform == "instagram")
-		a.href = "https://www.instagram.com/kassiprog/";
+		a.href = "https://www.instagram.com/hkassi/";
   else if(platform=="gmail")
-    a.href ="mailto:hassankassi93@gmail.com";
+    a.href ="mailto:hkassicontact@gmail.com";
   else 
-    a.href="https://github.com/kassi-prog";
+    a.href="https://github.com/hkassi";
 
   a.click();
 }

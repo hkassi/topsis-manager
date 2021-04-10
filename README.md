@@ -1,2 +1,2 @@
 # topsis-manager
-a simple SPA written with with vanilla javascript 
+a simple SPA written with vanilla javascript 

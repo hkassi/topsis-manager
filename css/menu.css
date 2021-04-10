@@ -1,0 +1,49 @@
+/* Sidebar  */
+#sidebar {  
+ display: none;  
+  height: 100%;
+  width: 100px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #312c51;
+  overflow-x: hidden;
+}
+
+
+#sidebottom {
+  position: absolute; 
+  bottom: 0; 
+  height: 250px; 
+}
+
+#autohide {
+  height: 60px;
+  width:60px;
+  margin-right: 25px;
+  top:0;
+  right:0;
+  position: fixed;
+  z-index: 1;
+}
+
+#sidebar img, #autohide img {
+  margin-left : 25px;
+  margin-top :  25px;
+  height: 40px;
+  width:  40px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+
+}
+/** inner shaddow must applied on hover **/
+#sidebar img:hover, #autohide img:hover {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.7);
+}
+/** on click **/
+#sidebar img:active, #autohide img:active {
+  box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+

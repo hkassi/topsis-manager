@@ -1,0 +1,73 @@
+
+#modal
+{
+	display: none;
+  min-width: 350px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+	padding : 25px;
+ 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+	background: linear-gradient(45deg, #f1aa9b,  #f0c38e);
+}
+
+ #confirmBtns{
+   display: inline;
+   
+ }
+@media screen and (max-width: 600px) {
+  #modal{
+    margin: 0px;
+    min-width: 300px;
+  }
+}
+
+#modal span {
+	font-size : 26px;
+	color : #48426d;
+}
+#modal img {
+  height: 40px;
+  width:  40px;
+  margin: 5px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  float: right;
+  cursor: pointer;
+
+}
+/** inner shaddow must applied on hover **/
+#modal img:hover{
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.7);
+}
+/*-- on click --*/
+#modal img:active{
+  box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+#modalForm {
+	margin-top: 32px;
+}
+#modalForm input {
+
+  display: block;	
+  background-color: #48426d; 
+  border: none;
+  color: #f0c38e;
+  padding:10px;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px 5px 5px 5px;
+
+}
+#modalForm input:focus{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  background-color: #312c51;
+}
+#modalForm label {
+	color: #48426d;
+	padding: 5px;
+}

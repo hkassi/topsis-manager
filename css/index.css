@@ -1,0 +1,87 @@
+
+/* 
+	these are the colors used trough  the whole project
+	purple 		 : #312c51;    
+	light purple : #48426d;
+	orange       : #f1aa9b
+	light orange : #f0c38e
+*/
+
+html {
+	height: 100%;
+	width:: 100%;
+	background: #f0c38e; 
+}
+
+#container{
+	display: none;
+	margin-left: 100px;
+}
+
+
+#welcome {
+	top : 0;
+	width :  100%;
+	height:  100%;
+  	position: fixed;
+}
+
+#welcome img{
+  width: 100%;
+  height: 100%;
+}
+
+#contact {
+  width:200px;
+  height: 200px;
+  top:0;
+  left: 0;
+  position: fixed;
+}
+#contact img{
+  margin: 25px;
+  height: 40px;
+  width:  40px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+#contact img:hover {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.7);
+}
+/*-- on click --*/
+#contact img:active {
+  box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+#welcome .btn {
+  position: fixed;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: #f0c38e;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #48426d;
+  border-radius: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+#welcome .btn:hover {
+  color: #f1aa9b;
+  background-color: #312c51;
+
+}
+#welcome .btn:active{
+  box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5), 1px 1px 1px rgba(0, 0, 0, 0.5);
+}

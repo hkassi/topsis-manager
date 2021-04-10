@@ -1,0 +1,31 @@
+table {
+	margin: 5px;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+	/* always on bottom */
+	z-index: -1;  
+
+	/* center it  */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+th, td {
+	padding: 15px;
+	background-color: rgba(255,255,255,0.2);
+	color: #48426d;
+}
+
+
+
+
+tbody tr:hover {
+			background-color: rgba(255,255,255,0.5);
+  			cursor: pointer;
+}
+tbody tr:active {
+			background-color: rgba(241,170,155,40);
+}

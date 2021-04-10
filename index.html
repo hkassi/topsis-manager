@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="./icons/favicon.png"/>
+    <title>TOPSIS MANAGER</title>
+    <script src="./js/topsis.js"></script>
+    <script src="./js/modal.js" ></script>  
+    <script src="./js/table.js"></script>
+    <script src="./js/app.js"></script>
+	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/menu.css">
+	<link rel="stylesheet" href="./css/table.css"> 
+	<link rel="stylesheet" href="./css/modal.css">
+	<link rel="stylesheet" href="./css/toggle.css">
+	<link rel="stylesheet" href="./css/notification.css">
+</head>
+<body>
+<div id="welcome">
+	<div id="contact">
+		<div><img src="./icons/linkedin.svg"  onclick="appContact('linkedin')"  title="Contact me via  Linked"></div>
+		<div><img src="./icons/instagram.svg" onclick="appContact('instagram')" title="Contact me instagram"  ></div>
+		<div><img src="./icons/gmail.svg"     onclick="appContact('gmail')"     title="Contact me via gmail"  ></div>
+		<div><img src="./icons/github.svg"    onclick="appContact('github')"    title="See my work at github" ></div>
+	</div>
+	<img src="./icons/welcome.svg">	
+	<button class="btn" onclick="appStart()">LAUNCH TOPSIS</button>
+</div>
+	<div id="modal">  
+		<div>
+			<span id="modalTitle"></span>
+		</div>
+		<div id="modalContent"></div><!-- for small devices -->
+		<span id="confirmBtns">
+			<img src="./icons/done.svg"   onclick="appConfirm(true)"  title ="Confirm"  id="okBtn" />
+			<img src="./icons/cancel.svg" onclick="appConfirm(false)" title ="Decline"  />
+		</span>
+	</div>	
+	<div id="sidebar" style="display: none;">
+
+		<div id="update">  <!-- MODIFICATION MENU-->
+			<img src="./icons/add.svg"    onclick="appADD()"     title ="Add a row"  />
+			<img src="./icons/delete.svg" onclick="appDELETE()"  title ="Delete a row" />	
+			<img src="./icons/edit.svg"   onclick="appEDIT()"    title ="Edit a row"   />	
+		</div>
+
+	 	<div id="sidebottom">   
+		<img src="./icons/toggle.svg"  onclick="appToggle()"  title ="Switch the tables" />
+		<img src="./icons/open.svg"    onclick="appOpen()"    title ="Open a file"       />
+		<img src="./icons/save.svg"    onclick="appSave()"    title ="Save to local storage"/>
+		</div>
+	</div>
+
+	
+<div id="container">
+	<div id="autohide">
+	<img src="./icons/show.svg" id="showIcon" onclick="showMenu()"  title ="Show the menu"/>
+	<img src="./icons/hide.svg" id="hideIcon" onclick="hideMenu()"  title ="Hide the menu" style="display: none;"/>
+	<img src="./icons/play.svg" id="playBtn"  onclick="runTopsis()" title ="Apply topsis"  style="display: none;"/>	
+	</div>
+	<div id="main">
+	<div  class="notification" id="notification">
+				<b>Notification</b>
+		  	    <span class="closebtn" >
+		  			<img src="./icons/cancel.svg"  onclick="hideNotification()" title="Close notification">
+		  		</span> 
+		  <div id="notificationBody"> </div>
+	</div> 
+
+	<table id="table">
+		<thead>
+			<tr id="tableHeader">
+				<th>Name</th><th>Weight</th> <th>Impact</th> 
+			</tr>
+		</thead>
+			<!-- this first row should be remain hidden in order to keep the same  table style  beyong the changes! May be there'is a solution for that but let's keep this one for now -->
+			<tr style="display: none;"> 
+				<td></td>
+			</tr>
+		<tbody>
+		</tbody>
+	</table>
+	</div>
+<div  style="display: none">
+	<form><input type="file" id="jsonFile"></form>
+</div>
+			
+
+</body>
+</html> 
